@@ -55,12 +55,12 @@ function App() {
                     <div className="button-frame">
                         <Link to="/" className="button-text">BREAKOUT-DROP</Link>
                         <Link to="/">
-                            <img className="button-img" src={caseButtonImg} />
+                            <img className="button-img" src={mainButtonImg} />
                         </Link>
                     </div>
                     <div className="button-frame">
-                        <Link to="/cases" className="button-text">CASE</Link>
-                        <Link to="/cases">
+                        <Link to="/" className="button-text">CASE</Link>
+                        <Link to="/">
                             <img className="button-img" src={caseButtonImg} style={{ transform: 'scale(1.35)'}} />
                         </Link>
                     </div>
