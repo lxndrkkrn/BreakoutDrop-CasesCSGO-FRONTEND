@@ -1,16 +1,27 @@
-# React + Vite
+# ATTENTION DISCLAIMER: This project is intended for educational purposes only. It does not involve real money or items. The developer does not encourage gambling. This project is not created for commercial purposes; it demonstrates the deception of many online casinos and similar resources, and how their fraudulent and deceptive scripts work. DO NOT PLAY AT THE CASINO!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Breakout-Drop : Cases CS2 : FRONTEND
+Проект BreakoutDrop-Frontend v1.0
 
-Currently, two official plugins are available:
+### Стек:
+- JavaScript, React
+- WebStorm
+- HTML
+- Docker (Отключено)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Функционал:
+- Это первая версия, 1 полупустая страница с 6-ю кейсами
 
-## React Compiler
+### Нововведения:
+- Нет
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Микроизменения:
+- Нет
 
-## Expanding the ESLint configuration
+### В разработке:
+- ???
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# How does it work?
+Online casinos operate on the following principle: When a player makes a deposit, say, $100, part of the money goes into the casino's "safe"—the owners' profit—while the other part circulates within the system, which determines the maximum winnings for all players. For example, five players each make a deposit of $200, leaving a total of $1,000 in the casino's balance. Of this, 20% goes to the owners, leaving $800. Let's say the first player opens a case and wins a skin worth $300. The result: the player wins $100, but this $100 is deducted from the funds circulating within the system, meaning that not all players will win. This approach is used in all mini-games: Cases, Upgrades, Contracts. Scripts are everywhere; don't play at the casino.
+
+# DO NOT PLAY AT THE CASINO!
