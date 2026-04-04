@@ -1,0 +1,54 @@
+.footer-content-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    gap: 120px;
+}
+
+.footer-info-contacts {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #54546330;
+    border: 3px solid #545463;
+
+    position: relative; /* Обязательно! Чтобы текст не улетел в угол экрана */
+    width: 544px;
+    height: 290px;
+    justify-content: center; /* Центрируем содержимое */
+    align-items: center;
+}
+
+.info-type {
+    font-family: 'Jaro', sans-serif !important;
+    font-size: 36px;
+    margin: 0 0 10px 0;
+    line-height: 1;
+
+    background-color: #888888;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    display: inline-block;
+}
+
+.info-url {
+    font-family: 'Jaro', sans-serif !important;
+    font-size: 36px;
+    margin: 0;
+    line-height: 1.2;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, #DBDBDB 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    display: inline-block;     /* Можно чуть приглушить яркость */
+}

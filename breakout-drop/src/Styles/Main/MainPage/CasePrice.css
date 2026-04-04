@@ -1,0 +1,17 @@
+.case-price {
+    text-decoration: none !important;
+
+    font-family: 'Jaro', sans-serif !important;
+    font-size: 26px !important;
+
+    background: linear-gradient(180deg, #FF633C 0%, #E29911 100%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent !important;
+
+    border: none;
+    background-color: transparent;
+}

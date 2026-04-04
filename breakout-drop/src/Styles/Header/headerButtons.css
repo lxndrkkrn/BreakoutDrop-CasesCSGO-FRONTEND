@@ -1,0 +1,54 @@
+.button-frame {
+    position: relative; /* Обязательно! Чтобы текст не улетел в угол экрана */
+    width: 260px;
+    height: 90px;
+    display: flex;
+    justify-content: center; /* Центрируем содержимое */
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden; /* Чтобы картинка не вылезала за края */
+
+    /* Ваш градиент */
+    background-image: linear-gradient(45deg, #CCCCCC48, #6E6E6E48);
+
+    border: 3px solid #979797;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.button-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Картинка заполнит весь блок */
+    z-index: 1; /* Картинка снизу */
+    opacity: 0.5;
+}
+
+.button-text {
+    position: absolute; /* Накладываем поверх картинки */
+    z-index: 2;         /* Текст сверху */
+
+    /* Сброс стандартных стилей кнопки */
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    font-family: 'Jaro', sans-serif !important;
+    font-size: 32px !important;
+    color: white !important;
+    text-transform: uppercase;
+
+    /* Эффект обводки (в CSS вместо stroke-size используется text-shadow) */
+    text-shadow: 2px 2px 0px #111113, -2px -2px 0px #111113, 2px -2px 0px #111113, -2px 2px 0px #111113;
+
+    text-decoration: none;
+}
+
+.button-frame:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.collection-frame {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 1750px;
+    height: auto;
+    margin: 0 auto;
+
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    gap: 20px;
+
+    background-image: linear-gradient(45deg, #232327, #111113);
+}

@@ -1,0 +1,62 @@
+/* Контейнер для всей строки (Row) */
+.footer-stats-row {
+    display: flex;
+    flex-direction: row;        /* Все блоки в одну линию */
+    justify-content: center;     /* Центрируем всю группу блоков на странице */
+    align-items: flex-start;    /* ГЛАВНОЕ: выравнивает все "Gold" по одной верхней линии */
+
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;             /* Центровка самого контейнера */
+
+    /* ИНДИВИДУАЛЬНЫЕ ОТСТУПЫ (как в Figma) */
+    /* Порядок: Сверху, Справа, Снизу, Слева */
+    padding: 50px 40px 20px 40px;
+
+    gap: 60px;                  /* Расстояние между колонками */
+}
+
+/* Отдельный блок (Колонка: Gold + Silver) */
+.stat-block {
+    display: flex;
+    flex-direction: column;     /* Текст друг под другом */
+    align-items: center;        /* Центрирует текст внутри колонки по горизонтали */
+    text-align: center;         /* Центрирует строки внутри параграфов */
+
+    flex: 1;                    /* Все колонки одинаковой ширины */
+    max-width: 300px;           /* Чтобы текст не растягивался слишком широко */
+}
+
+/* Золотой заголовок */
+.gold-text {
+    font-family: 'Jaro', sans-serif !important;
+    font-size: 48px;
+    margin: 0 0 10px 0;         /* Отступ 10px только снизу (до серого текста) */
+    line-height: 1;             /* Убирает лишнее пространство сверху/снизу букв */
+
+    /* Градиент */
+    background: linear-gradient(180deg, #F3FF45 0%, #FF9D00 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Для надежности в некоторых браузерах */
+    display: inline-block;
+}
+
+/* Серый текст под золотом */
+.silver-text {
+    font-family: 'Jaro', sans-serif !important;
+    font-size: 32px;
+    margin: 0;                  /* Убираем все внешние отступы */
+    line-height: 1.2;           /* Межстрочный интервал для читаемости */
+
+    /* Градиент (Silver) */
+    background: linear-gradient(180deg, #B8B8B8 25%, #525252 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    display: inline-block;
+    opacity: 0.9;               /* Можно чуть приглушить яркость */
+}

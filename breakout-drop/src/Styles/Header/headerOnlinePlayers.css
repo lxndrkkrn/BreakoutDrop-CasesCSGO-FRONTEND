@@ -1,0 +1,35 @@
+.onlinePlayers-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    width: 228px;
+    min-height: 92px;
+}
+
+
+.onlinePlayers-img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.onlinePlayers-online {
+    font-family: 'Jaro', sans-serif !important;
+    font-size: 32px !important;
+
+    background: linear-gradient(180deg, #0FD54B 0%, #0C9A37 100%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    border: none;
+    background-color: transparent;
+}

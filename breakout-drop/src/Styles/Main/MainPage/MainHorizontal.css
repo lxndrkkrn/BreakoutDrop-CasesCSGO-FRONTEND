@@ -1,0 +1,13 @@
+.main-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1450px;
+    height: auto;
+    margin: 0 auto;
+
+    gap: 20px;
+}

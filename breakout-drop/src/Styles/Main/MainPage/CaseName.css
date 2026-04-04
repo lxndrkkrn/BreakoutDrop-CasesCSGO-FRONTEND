@@ -1,0 +1,9 @@
+.case-name {
+    text-decoration: none !important;
+
+    font-family: 'Jaro', sans-serif !important;
+    font-size: 32px !important;
+    color: #DFDFDF !important;
+
+    text-shadow: 2px 2px 0px #111113, -2px -2px 0px #111113, 2px -2px 0px #111113, -2px 2px 0px #111113;
+}

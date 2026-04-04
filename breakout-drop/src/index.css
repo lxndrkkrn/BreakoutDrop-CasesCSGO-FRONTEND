@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Jaro', sans-serif;
+    font-weight: 32;
+}
+
+link {
+    text-decoration: none;
+}
+
+img {
+    max-width: 200%;
+}
+
+.all-background {
+    background-color: #191919;
+}

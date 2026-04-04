@@ -1,0 +1,20 @@
+/* Общие стили для всех контейнеров оружия */
+.weapon-card {
+    width: 120px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border-bottom: 3px solid rgba(0,0,0,0.5); /* Полосочка снизу для красоты */
+}
+
+/* Цвета редкости (скины) */
+.rarity-white { background: #b0c3d9; }   /* Ширпотреб */
+.rarity-light_blue { background: #5e98d9; } /* Промышленное */
+.rarity-blue { background: #4b69ff; }    /* Армейское */
+.rarity-purple { background: #8847ff; } /* Запрещенное */
+.rarity-magenta { background: #d32ce6; } /* Засекреченное */
+.rarity-red { background: #eb4b4b; }     /* Тайное */
+.rarity-gold { background: #caab05; }       /* Ножи/Перчатки */
+.rarity-yellow { background: #FFFF00; }       /* Контробанда */

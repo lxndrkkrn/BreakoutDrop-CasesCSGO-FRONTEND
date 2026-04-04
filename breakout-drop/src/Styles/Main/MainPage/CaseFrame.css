@@ -1,0 +1,21 @@
+.case-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    max-width: 280px;
+    height: 300px;
+    margin: 0 auto;
+
+    gap: 10px;
+
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.case-frame:hover {
+    transform: scale(1.05); /* Увеличиваем на 5% */
+    filter: brightness(1.2); /* Делаем чуть ярче */
+    cursor: pointer;         /* Меняем курсор на палец */
+}

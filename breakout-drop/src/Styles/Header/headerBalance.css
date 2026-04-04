@@ -1,0 +1,43 @@
+.balance-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    width: 228px;
+    min-height: 92px;
+}
+
+.balance-text {
+    font-family: 'Jaro', sans-serif !important;
+    font-size: 40px !important;
+
+    background: linear-gradient(180deg, #FFDD1B 0%, #CF8000 100%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    border: none;
+    background-color: transparent;
+}
+
+.balance-count {
+    font-family: 'Jaro', sans-serif !important;
+    font-size: 32px !important;
+
+    background: linear-gradient(180deg, #FF633C 0%, #E29911 100%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    border: none;
+    background-color: transparent;
+}
