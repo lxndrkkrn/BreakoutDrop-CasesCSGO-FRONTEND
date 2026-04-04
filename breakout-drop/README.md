@@ -5,8 +5,7 @@
 
 ### Стек:
 - JavaScript, React
-- WebStorm
-- HTML
+- HTML, CSS
 - Docker (Отключено)
 
 ### Функционал:
