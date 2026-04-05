@@ -1,0 +1,18 @@
+.profile-title {
+    text-align: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 50px auto;
+
+    background-image: linear-gradient(45deg, #515151, #717171);
+    border-radius: 20px;
+
+    text-decoration: none !important;
+
+    font-family: 'Jaro', sans-serif !important;
+    font-size: 40px !important;
+    color: #FFFFFF !important;
+}

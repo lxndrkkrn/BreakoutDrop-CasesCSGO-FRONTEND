@@ -1,5 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import {CASE_IMAGES} from "./cases.js";
+
+import ProfilePage from "./Pages/ProfilePage.jsx";
+import CasePage from "./Pages/CasePage.jsx";
 
 import "./Styles/Header/header.css";
 import "./Styles/Header/headerButtons.css";
@@ -23,7 +27,16 @@ import "./Styles/Main/MainPage/CaseFrame.css";
 import "./Styles/Main/MainPage/CaseName.css";
 import "./Styles/Main/MainPage/CasePrice.css";
 
+import "./Styles/Main/ProfilePage/profileTitle.css";
+import "./Styles/Main/ProfilePage/profileButtons.css";
+import "./Styles/Main/ProfilePage/profileSkinsFrame.css";
+import "./Styles/Main/ProfilePage/profileSkinsButton.css";
+
+import "./Styles/Main/CasePage/CaseTitle.css";
+import "./Styles/Main/CasePage/CaseImg.css";
+
 import "../src/index.css";
+import "./Styles/rarities.css";
 
 import React from "react";
 
@@ -35,14 +48,12 @@ import contractButtonImg from "./assets/ContractButton.png";
 import onlinePlayersImg from "./assets/onlinePlayersCount.png";
 import breakout from "./assets/Breakout.jpg";
 
-import ProfilePage from "./Pages/ProfilePage.jsx";
-
-import DreamsNightmares from "./assets/Case/DreamsNightmares.png";
-import Kilowatt from "./assets/Case/Kilowatt.png";
-import BreakoutCase from "./assets/Case/Breakout.png";
-import Phoenix from "./assets/Case/Phoenix.png";
-import Vanguard from "./assets/Case/Vanguard.png";
-import FractureCase from "./assets/Case/Fracture.png";
+import DreamsNightmares from "../public/Case/DreamsNightmares.png";
+import Kilowatt from "../public/Case/Kilowatt.png";
+import BreakoutCase from "../public/Case/Breakout.png";
+import Phoenix from "../public/Case/Phoenix.png";
+import Vanguard from "../public/Case/Vanguard.png";
+import FractureCase from "../public/Case/Fracture.png";
 
 
 function App() {
@@ -98,8 +109,9 @@ function App() {
 
             <div>
                 <Routes>
-                    <Route path="/" element={<HomePage />} />       {/* Что видим на главной */}
-                    <Route path="/profile" element={<ProfilePage />} /> {/* Что видим в профиле */}
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/profile" element={<ProfilePage />} />
+                    <Route path="/case/:id" element={<CasePage />} />
                 </Routes>
             </div>
 
@@ -208,7 +220,7 @@ export function HomePage() {
 
                 <div className="case-frame">
                     <Link to="/case/1" style={{ textDecoration: 'none' }}>
-                        <img src={Kilowatt} alt="case" />
+                        <img src={CASE_IMAGES.Kilowatt} alt="case" />
                         <p className="case-name">Kilowatt</p>
                         <p className="case-price">29.00</p>
                     </Link>
@@ -216,7 +228,7 @@ export function HomePage() {
 
                 <div className="case-frame">
                     <Link to="/case/2" style={{ textDecoration: 'none' }}>
-                        <img src={FractureCase} alt="case" />
+                        <img src={CASE_IMAGES.FractureCase} alt="case" />
                         <p className="case-name">Fracture</p>
                         <p className="case-price">75.00</p>
                     </Link>
@@ -224,7 +236,7 @@ export function HomePage() {
 
                 <div className="case-frame">
                     <Link to="/case/3" style={{ textDecoration: 'none' }}>
-                        <img src={DreamsNightmares} alt="case" />
+                        <img src={CASE_IMAGES.DreamsNightmares} alt="case" />
                         <p className="case-name">Dreams & Nightmares</p>
                         <p className="case-price">189.00</p>
                     </Link>
@@ -236,7 +248,7 @@ export function HomePage() {
 
                 <div className="case-frame">
                     <Link to="/case/4" style={{ textDecoration: 'none' }}>
-                        <img src={Phoenix} alt="case" />
+                        <img src={CASE_IMAGES.Phoenix} alt="case" />
                         <p className="case-name">Phoenix</p>
                         <p className="case-price">359.00</p>
                     </Link>
@@ -244,7 +256,7 @@ export function HomePage() {
 
                 <div className="case-frame">
                     <Link to="/case/5" style={{ textDecoration: 'none' }}>
-                        <img src={Vanguard} alt="case" />
+                        <img src={CASE_IMAGES.Vanguard} alt="case" />
                         <p className="case-name">Vanguard</p>
                         <p className="case-price">449.00</p>
                     </Link>
@@ -252,7 +264,7 @@ export function HomePage() {
 
                 <div className="case-frame">
                     <Link to="/case/6" style={{ textDecoration: 'none' }}>
-                        <img src={BreakoutCase} alt="case" />
+                        <img src={CASE_IMAGES.BreakoutCase} alt="case" />
                         <p className="case-name">Breakout</p>
                         <p className="case-price">709.00</p>
                     </Link>

@@ -52,3 +52,7 @@
     filter: brightness(1.2);
     cursor: pointer;
 }
+
+.button-frame:active {
+    transform: scale(0.9);
+}

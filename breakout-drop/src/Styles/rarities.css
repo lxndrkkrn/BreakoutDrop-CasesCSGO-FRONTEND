@@ -10,11 +10,65 @@
 }
 
 /* Цвета редкости (скины) */
-.rarity-white { background: #b0c3d9; }   /* Ширпотреб */
-.rarity-light_blue { background: #5e98d9; } /* Промышленное */
-.rarity-blue { background: #4b69ff; }    /* Армейское */
-.rarity-purple { background: #8847ff; } /* Запрещенное */
-.rarity-magenta { background: #d32ce6; } /* Засекреченное */
-.rarity-red { background: #eb4b4b; }     /* Тайное */
-.rarity-gold { background: #caab05; }       /* Ножи/Перчатки */
-.rarity-yellow { background: #FFFF00; }       /* Контробанда */
+.rarity-white {
+    background: linear-gradient(0deg, #FFFFFF80, #b0c3d980);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}   /* Ширпотреб */
+
+.rarity-light_blue {
+
+    background: linear-gradient(0deg, #2BA8C480, #5e98d980);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+} /* Промышленное */
+
+.rarity-blue {
+    background: #4b69ff;
+    background: linear-gradient(0deg, #343BC580, #2B4EFF80);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}    /* Армейское */
+
+.rarity-purple {
+
+    background: linear-gradient(0deg, #6A14C580, #7C35FF80);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+} /* Запрещенное */
+
+.rarity-magenta {
+    background: #d32ce6;
+    background: linear-gradient(0deg, #C211D280, #d32ce680);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+} /* Засекреченное */
+
+.rarity-red {
+    background: linear-gradient(0deg, #CF040480, #FF3A3A80);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}     /* Тайное */
+
+.rarity-gold {
+    background: #caab05;
+    background: linear-gradient(0deg, #caab0550, #caab0550);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}       /* Ножи/Перчатки */
+
+.rarity-yellow {
+    background: #FFFF00;
+    background: linear-gradient(0deg, #FFFF0050, #FFFF0050);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}       /* Контробанда */
+

@@ -1,13 +1,13 @@
 .case-frame {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
     width: 100%;
     max-width: 280px;
     height: 300px;
-    margin: 0 auto;
+    margin: 10px auto;
 
     gap: 10px;
 
@@ -15,7 +15,7 @@
 }
 
 .case-frame:hover {
-    transform: scale(1.05); /* Увеличиваем на 5% */
-    filter: brightness(1.2); /* Делаем чуть ярче */
-    cursor: pointer;         /* Меняем курсор на палец */
+    transform: scale(1.05);
+    filter: brightness(1.2);
+    cursor: pointer;
 }

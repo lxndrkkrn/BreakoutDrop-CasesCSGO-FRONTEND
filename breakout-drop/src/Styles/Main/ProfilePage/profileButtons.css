@@ -1,0 +1,127 @@
+/* Основной контейнер карточки */
+.profile-card {
+    background-color: #33363B; /* Темно-серый фон карточки */
+    border: 2px solid #4B5159;
+    border-radius: 15px;
+    width: 350px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 30px auto;
+}
+
+/* Заголовок "Trade URL" */
+.card-label {
+    font-family: 'Jaro', sans-serif;
+    font-size: 32px;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Серый инпут как на скрине */
+.profile-set-input {
+    width: 100%;
+    height: 45px;
+    background-color: #555B63; /* Серый фон как на фото */
+    border: none;
+    border-radius: 10px;
+    color: #A0AAB5;
+    text-align: center;
+    font-family: 'Jaro', sans-serif;
+    font-size: 24px;
+    outline: none;
+    transition: background 0.2s ease;
+}
+
+.profile-set-input:focus {
+    background-color: #5F666F;
+}
+
+/* Желтая кнопка "Update" */
+.profile-update-btn {
+    width: 150px;
+    height: 50px;
+
+    /* Градиент сверху вниз */
+    background: linear-gradient(180deg, #FFB731 0%, #E59500 100%);
+
+    /* Темно-серая рамка */
+    border: 2px solid #E59500;
+    border-radius: 12px;
+
+    color: white;
+    font-family: 'Jaro', sans-serif;
+    font-size: 28px;
+    cursor: pointer;
+
+    /* Обводка текста для объема */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s ease;
+}
+
+/* Эффекты кнопки */
+.profile-update-btn:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile-update-btn:active {
+    transform: scale(0.96);
+}
+
+.horizontal-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1450px;
+    height: auto;
+    margin: 0 auto;
+
+    gap: 20px;
+}
+
+.profile-update-btn-sell-all {
+    width: 250px;
+    height: auto;
+    margin: 0px auto;
+
+    background: linear-gradient(90deg, #FFE030 0%, #FFB731 100%);
+
+    border: 2px solid #E59500;
+    border-radius: 12px;
+
+    color: white;
+    font-family: 'Jaro', sans-serif;
+    font-size: 28px;
+    cursor: pointer;
+
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s ease;
+}
+
+.profile-update-btn-sell-all:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile-update-btn-sell-all:active {
+    transform: scale(0.96);
+}

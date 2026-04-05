@@ -1,0 +1,25 @@
+.case-box-img-frame {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Центрирует картинку по горизонтали */
+    justify-content: center; /* Центрирует по вертикали */
+    width: 100%;
+    margin: 30px auto;
+
+    gap: 20px;
+}
+
+.case-box-img {
+    text-align: center;
+    justify-content: center;
+
+    width: 100%;           /* Вместо 150% */
+    max-width: 400px;      /* Ограничьте ширину под ваш дизайн */
+    height: auto;
+    margin: 30px auto;
+
+    border-radius: 999999px;
+    border: 10px solid #B4B4B440;
+}

@@ -12,9 +12,10 @@
     border-radius: 3px;
     box-sizing: border-box;
 
-    width: 100px;
     height: auto;
     object-fit: contain;
+
+    transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 .profile-img {
@@ -26,4 +27,8 @@
 .profile-frame:hover {
     filter: brightness(1.2);
     cursor: pointer;
+}
+
+.profile-frame:active {
+    transform: scale(0.9);
 }
