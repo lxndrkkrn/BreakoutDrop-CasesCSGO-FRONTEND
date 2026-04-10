@@ -1,10 +1,9 @@
 export const CASE_IMAGES = {
 
-     DreamsNightmares: "../public/Case/DreamsNightmares.png",
-     Kilowatt: "../public/Case/Kilowatt.png",
-     BreakoutCase: "../public/Case/Breakout.png",
-     Phoenix: "../public/Case/Phoenix.png",
-     Vanguard: "../public/Case/Vanguard.png",
-     FractureCase: "../public/Case/Fracture.png"
-
+     DreamsNightmares: "/Case/DreamsNightmares.png",
+     Kilowatt: "/Case/Kilowatt.png",
+     BreakoutCase: "/Case/Breakout.png",
+     Phoenix: "/Case/Phoenix.png",
+     Vanguard: "/Case/Vanguard.png",
+     FractureCase: "/Case/Fracture.png",
 }

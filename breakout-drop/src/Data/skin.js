@@ -10909,7 +10909,7 @@ export const SKINS_DATA = {
             "name": "M4A4 | 龍王 (Dragon King)",
             "rarity": "Classified",
             "color": "#d32ce6",
-            "img": "/skins/Rifles/M4A1/M4A4_龍王_(Dragon_King).png",
+            "img": "/skins/Rifles/M4A1/M4A4_Dragon_King.png",
             "price": 0
         }
     ],

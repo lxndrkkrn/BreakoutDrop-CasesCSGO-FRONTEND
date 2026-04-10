@@ -1,0 +1,89 @@
+.register-frame {
+    text-align: start;
+    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 820px;
+    height: auto;
+    margin: 20px auto;
+
+    background-image: linear-gradient(90deg, #515151, #717171);
+
+    border-radius: 10px;
+    border: 5px solid #515151;
+
+    opacity: 0.5;
+}
+
+.register-data-type {
+    text-decoration: none !important;
+
+    font-family: 'Jaro', sans-serif !important;
+    font-size: 36px !important;
+    color: #C5C5C5 !important;
+
+    padding-left: 100px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.register-input {
+    width: 100%;
+    max-width: 600px;
+    min-height: 60px;
+    height: auto;
+
+    background-image: linear-gradient(90deg, #333333, #4D4D4D);
+
+    border: none;
+    border-radius: 10px;
+    color: #A0AAB5;
+
+    text-align: center;
+    font-family: 'Jaro', sans-serif;
+
+    font-size: 28px;
+    outline: none;
+
+    opacity: 1 !important;
+
+    transition: background 0.2s ease;
+}
+
+.register-button {
+    width: 230px;
+    height: 70px;
+
+    background: linear-gradient(180deg, #FFB731 0%, #E59500 100%);
+
+    border: 2px solid #E59500;
+    border-radius: 12px;
+
+    color: white;
+    font-family: 'Jaro', sans-serif;
+    font-size: 36px;
+    cursor: pointer;
+
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s ease;
+
+    margin: 30px;
+}
+
+.register-button:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.register-button:active {
+    transform: scale(0.9);
+}

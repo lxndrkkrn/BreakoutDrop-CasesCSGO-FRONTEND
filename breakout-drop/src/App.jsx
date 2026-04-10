@@ -2,8 +2,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import {CASE_IMAGES} from "./cases.js";
 
+import RegisterPage from "./Pages/RegisterPage.jsx";
+import LoginPage from "./Pages/LoginPage.jsx";
 import ProfilePage from "./Pages/ProfilePage.jsx";
 import CasePage from "./Pages/CasePage.jsx";
+import UpgradePage from "./Pages/UpgradePage.jsx";
 
 import "./Styles/Header/header.css";
 import "./Styles/Header/headerButtons.css";
@@ -34,6 +37,15 @@ import "./Styles/Main/ProfilePage/profileSkinsButton.css";
 
 import "./Styles/Main/CasePage/CaseTitle.css";
 import "./Styles/Main/CasePage/CaseImg.css";
+import "./Styles/Main/CasePage/CaseOpenButton.css";
+import "./Styles/Main/CasePage/CaseSkinFrame.css";
+import "./Styles/Main/CasePage/CaseSkin.css";
+
+import "./Styles/Main/RegisterPage/RegisterTitle.css";
+import "./Styles/Main/RegisterPage/RegisterFrame.css";
+
+import "./Styles/Main/UpgradePage/UpgradeFrame.css";
+import "./Styles/Main/UpgradePage/UpgradeSkin.css";
 
 import "../src/index.css";
 import "./Styles/rarities.css";
@@ -47,14 +59,6 @@ import contractButtonImg from "./assets/ContractButton.png";
 
 import onlinePlayersImg from "./assets/onlinePlayersCount.png";
 import breakout from "./assets/Breakout.jpg";
-
-import DreamsNightmares from "../public/Case/DreamsNightmares.png";
-import Kilowatt from "../public/Case/Kilowatt.png";
-import BreakoutCase from "../public/Case/Breakout.png";
-import Phoenix from "../public/Case/Phoenix.png";
-import Vanguard from "../public/Case/Vanguard.png";
-import FractureCase from "../public/Case/Fracture.png";
-
 
 function App() {
     return (
@@ -112,6 +116,9 @@ function App() {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/profile" element={<ProfilePage />} />
                     <Route path="/case/:id" element={<CasePage />} />
+                    <Route path="/register" element={<RegisterPage />} />
+                    <Route path="/login" element={<LoginPage />} />
+                    <Route path="/upgrade" element={<UpgradePage />} />
                 </Routes>
             </div>
 

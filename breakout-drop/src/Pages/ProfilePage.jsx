@@ -1,5 +1,6 @@
 
 import React from "react";
+import {Link} from "react-router-dom";
 
 export default function ProfilePage() {
     return (
@@ -106,13 +107,51 @@ export default function ProfilePage() {
                         <p className="profile-skin-price">$ 17 950.00</p>
 
                         <div className="profile-skins-button-horizontal">
-                            <button className="profile-skins-button">Cntrct</button>
-                            <button className="profile-skins-button">Upgr</button>
-                            <button className="profile-skins-button">Sell</button>
-                            <button className="profile-skins-button">Steam</button>
+
+                            <Link to="/contract" className="profile-skins-button">
+                                <button className="profile-skins-button">Cntrct</button>
+                            </Link>
+
+                            <Link to="/upgrade" className="profile-skins-button">
+                                <button className="profile-skins-button">Upgr</button>
+                            </Link>
+
+                            <Link to="/sell" className="profile-skins-button">
+                                <button className="profile-skins-button">Sell</button>
+                            </Link>
+
+                            <Link to="/steam" className="profile-skins-button">
+                                <button className="profile-skins-button">Steam</button>
+                            </Link>
+
                         </div>
                     </div>
 
+                    <div className="profile-skin rarity-gold">
+                        <p className="profile-skin-name">Karambit | Doppler</p>
+                        <img className="profile-skin-img" src="/skins/Knives/Karambit/Karambit_Doppler_Phase_2.png"/>
+                        <p className="profile-skin-price">$ 2 345.63</p>
+
+                        <div className="profile-skins-button-horizontal">
+
+                            <Link to="/contract" className="profile-skins-button">
+                                <button className="profile-skins-button">Cntrct</button>
+                            </Link>
+
+                            <Link to="/upgrade" className="profile-skins-button">
+                                <button className="profile-skins-button">Upgr</button>
+                            </Link>
+
+                            <Link to="/sell" className="profile-skins-button">
+                                <button className="profile-skins-button">Sell</button>
+                            </Link>
+
+                            <Link to="/steam" className="profile-skins-button">
+                                <button className="profile-skins-button">Steam</button>
+                            </Link>
+
+                        </div>
+                    </div>
 
                 </div>
 

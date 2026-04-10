@@ -1,0 +1,64 @@
+.upgrade-skin-in-upgrade-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px;
+    gap: 150px;
+}
+
+.upgrade-skin-in-frame {
+    background-color: #E5E5E520;
+    border-radius: 15px;
+    padding: 20px;
+
+    width: 300px;
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.upgrade-skin {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upgrade-skin-img {
+    width: 80%;
+    height: 180px;
+    object-fit: contain;
+    margin-top: 20px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.upgrade-skin-name {
+    font-family: 'Jaro', sans-serif;
+    font-size: 24px;
+    color: #FFFFFF !important;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.upgrade-skin-price {
+    font-family: 'Jaro', sans-serif;
+    font-size: 30px;
+    color: #F08810 !important;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.upgrade-skin-img:hover {
+    transform: translateY(-10px);
+    filter: brightness(1.3);
+}
