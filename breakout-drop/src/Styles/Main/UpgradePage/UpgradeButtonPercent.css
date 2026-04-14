@@ -1,0 +1,152 @@
+.upgrade-button-percent-75 {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 75px;
+    min-height: 75px;
+    height: auto;
+    margin: 0;
+
+    background-color: #5E667880;
+
+    border: 3px solid #00FF00;
+    border-radius: 20px;
+
+    color: white;
+    font-family: 'Jaro', sans-serif;
+    font-size: 32px;
+    cursor: pointer;
+
+    text-shadow: 1px 1px 2px rgba(40, 40, 40, 0.6);
+
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.upgrade-button-percent-50 {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 75px;
+    min-height: 75px;
+    height: auto;
+    margin: 0;
+
+    background-color: #5E667880;
+
+    border: 3px solid #FFFF00;
+    border-radius: 20px;
+
+    color: white;
+    font-family: 'Jaro', sans-serif;
+    font-size: 32px;
+    cursor: pointer;
+
+    text-shadow: 1px 1px 2px rgba(40, 40, 40, 0.6);
+
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.upgrade-button-percent-30 {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 75px;
+    min-height: 75px;
+    height: auto;
+    margin: 0;
+
+    background-color: #5E667880;
+
+    border: 3px solid #FF0000;
+    border-radius: 20px;
+
+    color: white;
+    font-family: 'Jaro', sans-serif;
+    font-size: 32px;
+    cursor: pointer;
+
+    text-shadow: 1px 1px 2px rgba(40, 40, 40, 0.6);
+
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.upgrade-button-x {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 75px;
+    min-height: 75px;
+    height: auto;
+    margin: 0;
+
+    background-color: #5E667880;
+
+    border: 3px solid #929292;
+    border-radius: 20px;
+
+    color: white;
+    font-family: 'Jaro', sans-serif;
+    font-size: 32px;
+    cursor: pointer;
+
+    text-shadow: 1px 1px 2px rgba(40, 40, 40, 0.6);
+
+    transition: transform 0.1s ease, filter 0.2s ease;
+}
+
+.upgrade-button-x:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+.upgrade-button-percent-30:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+.upgrade-button-percent-50:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+.upgrade-button-percent-75:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+
+.upgrade-button-x:active {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.upgrade-button-percent-30:active {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.upgrade-button-percent-50:active {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.upgrade-button-percent-75:active {
+    transform: scale(0.95);
+    cursor: pointer;
+}

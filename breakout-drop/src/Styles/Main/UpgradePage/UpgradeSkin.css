@@ -38,7 +38,7 @@
     height: 180px;
     object-fit: contain;
     margin-top: 20px;
-    transition: transform 0.2s ease, filter 0.2s ease;
+    transition: transform 0.4s ease, filter 0.2s ease;
 }
 
 .upgrade-skin-name {

@@ -7,6 +7,8 @@ import LoginPage from "./Pages/LoginPage.jsx";
 import ProfilePage from "./Pages/ProfilePage.jsx";
 import CasePage from "./Pages/CasePage.jsx";
 import UpgradePage from "./Pages/UpgradePage.jsx";
+import ContractPage from "./Pages/ContractPage.jsx";
+
 
 import "./Styles/Header/header.css";
 import "./Styles/Header/headerButtons.css";
@@ -43,9 +45,21 @@ import "./Styles/Main/CasePage/CaseSkin.css";
 
 import "./Styles/Main/RegisterPage/RegisterTitle.css";
 import "./Styles/Main/RegisterPage/RegisterFrame.css";
+import "./Styles/Main/RegisterPage/LoginRegisterURL.css";
 
 import "./Styles/Main/UpgradePage/UpgradeFrame.css";
 import "./Styles/Main/UpgradePage/UpgradeSkin.css";
+import "./Styles/Main/UpgradePage/UpgradeButton.css";
+import "./Styles/Main/UpgradePage/UpgradeButtonPercent.css";
+import "./Styles/Main/UpgradePage/UpgradeSkinsFrame.css";
+import "./Styles/Main/UpgradePage/UpgradeSkinButton.css";
+
+import "./Styles/Main/ContractPage/WonSkinFrame.css";
+import "./Styles/Main/ContractPage/SkinsListTitle.css";
+import "./Styles/Main/ContractPage/ContractFrame.css";
+import "./Styles/Main/ContractPage/ContractSkinFrame.css";
+import "./Styles/Main/ContractPage/ContractText.css";
+import "./Styles/Main/ContractPage/SignTheContract.css";
 
 import "../src/index.css";
 import "./Styles/rarities.css";
@@ -68,8 +82,8 @@ function App() {
                 <div className="header-down-frame">
 
                     <div className="button-frame">
-                        <Link to="/" className="button-text">BREAKOUT-DROP</Link>
-                        <Link to="/">
+                        <Link to="/login" className="button-text">BREAKOUT-DROP</Link>
+                        <Link to="/login">
                             <img className="button-img" src={mainButtonImg} />
                         </Link>
                     </div>
@@ -119,6 +133,7 @@ function App() {
                     <Route path="/register" element={<RegisterPage />} />
                     <Route path="/login" element={<LoginPage />} />
                     <Route path="/upgrade" element={<UpgradePage />} />
+                    <Route path="/contract" element={<ContractPage />} />
                 </Routes>
             </div>
 

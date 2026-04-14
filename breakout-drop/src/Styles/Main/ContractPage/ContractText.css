@@ -1,0 +1,31 @@
+.contract-text {
+    width: 100%;
+    max-width: 600px;
+    min-height: 150px;
+    height: auto;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Jaro', sans-serif !important;
+    font-size: 36px !important;
+    color: #FFFFFF !important;
+}
+
+.contract-text-and-price-frame {
+    width: 100%;
+    max-width: 600px;
+    min-height: 150px;
+    height: auto;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}

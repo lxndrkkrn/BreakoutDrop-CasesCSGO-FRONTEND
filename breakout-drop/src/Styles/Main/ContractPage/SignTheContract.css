@@ -1,0 +1,57 @@
+.contract-input {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+
+    background-color: #3078FF70;
+
+    border: none;
+    border-radius: 10px;
+    color: #FFAAFF !important;
+
+    text-align: center;
+
+    font-family: 'Jaro', sans-serif;
+    font-size: 36px;
+    outline: none;
+
+    transition: background 0.2s ease;
+}
+
+.sign-this {
+    width: 100%;
+    max-width: 150px;
+    min-height: 70px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #63FF6370;
+
+    border: 2px solid #3CFF3C;
+    border-radius: 12px;
+
+    color: #FFFFFF !important;
+
+    text-align: center;
+
+    font-family: 'Jaro', sans-serif;
+    font-size: 36px;
+    outline: none;
+
+    transition: transform 0.15s ease, filter 0.2s ease;
+}
+
+.sign-this:hover {
+    filter: brightness(1.2);
+    transform: translateY(-3px);
+}
+
+.sign-this:active {
+    filter: brightness(0.9);
+    transform: scale(0.9);
+}

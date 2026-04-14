@@ -1,0 +1,17 @@
+.registerOrLogin-title {
+    text-align: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 2048px;
+    height: auto;
+    margin: 30px auto;
+
+    text-decoration: none !important;
+
+    font-family: 'Jaro', sans-serif !important;
+    font-size: 26px !important;
+    color: #FF00FF !important;
+
+    opacity: 0.5;
+}

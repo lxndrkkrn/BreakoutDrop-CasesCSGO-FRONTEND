@@ -1,0 +1,86 @@
+.upgrade-buttons-frame {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1250px;
+    min-height: 130px;
+    height: auto;
+    margin: 0;
+
+    gap: 20px;
+}
+
+.upgrade-button {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 300px;
+    min-height: 100px;
+    height: auto;
+    margin: 0;
+
+    background-image: linear-gradient(90deg, #FFE732, #FF9822);
+
+    border: 3px solid #FFFF00;
+    border-radius: 20px;
+
+    color: white;
+    font-family: 'Jaro', sans-serif;
+    font-size: 40px;
+    cursor: pointer;
+
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.upgrade-search {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 170px;
+    min-height: 50px;
+    height: auto;
+    margin: 0;
+
+    background-color: #5E667880;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+
+    text-align: center;
+
+    color: white;
+    font-family: 'Jaro', sans-serif;
+    font-size: 26px;
+    cursor: pointer;
+
+    text-shadow: 1px 1px 2px rgba(40, 40, 40, 1);
+
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.upgrade-button:hover {
+    transform: scale(1.05);
+}
+
+.upgrade-button:active {
+    transform: scale(0.9);
+}
+
+.upgrade-min-max-price:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}

@@ -1,7 +1,35 @@
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-import React from "react";
+import {registerUser} from "../api.js";
 
 export default function RegisterPage() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [name, setName] = useState("");
+    const [tradeURL, setTradeURL] = useState("");
+
+    const handleSubmit = async () => {
+
+        console.log("ТЕКУЩИЕ СТЕЙТЫ:", { name, email, password, tradeURL });
+
+        const data = {
+            name: name,
+            email: email,
+            password: password,
+            tradeURL: tradeURL
+        };
+
+        console.log("ОБЪЕКТ ДЛЯ ОТПРАВКИ:", JSON.stringify(data));
+
+        try {
+            const result = await registerUser(data);
+            console.log("УСПЕХ:", result);
+        } catch (error) {
+            console.error("ОШИБКА В handleSubmit:", error);
+        }
+    };
+
     return (
         <div className="content-area">
 
@@ -19,6 +47,7 @@ export default function RegisterPage() {
                             type="text"
                             className="register-input"
                             placeholder="your not real name"
+                            onChange={(e) => {setName(e.target.value)}}
                         />
 
                     </div>
@@ -32,6 +61,7 @@ export default function RegisterPage() {
                             type="text"
                             className="register-input"
                             placeholder="example@gmail.com"
+                            onChange={(e) => {setEmail(e.target.value)}}
                         />
 
                     </div>
@@ -45,6 +75,7 @@ export default function RegisterPage() {
                             type="password"
                             className="register-input"
                             placeholder="super secret password"
+                            onChange={(e) => {setPassword(e.target.value)}}
                         />
 
                     </div>
@@ -58,6 +89,7 @@ export default function RegisterPage() {
                             type="text"
                             className="register-input"
                             placeholder="URL"
+                            onChange={(e) => {setTradeURL(e.target.value)}}
                         />
 
                     </div>
@@ -65,9 +97,15 @@ export default function RegisterPage() {
 
             </div>
 
-            <button className="register-button">
+            <button onClick={handleSubmit} className="register-button">
                 Submit
             </button>
+
+            <div className="registerOrLogin-title">
+                <Link to="/login">
+                    <p className="registerOrLogin-title">Have an account? Login</p>
+                </Link>
+            </div>
 
         </div>
     );

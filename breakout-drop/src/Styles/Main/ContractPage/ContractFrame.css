@@ -1,0 +1,47 @@
+.contract-main-frame {
+    width: 100%;
+    max-width: 2048px;
+    height: auto;
+    margin: 15px;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contract-main-skin-frame {
+    width: 100%;
+    max-width: 800px;
+    min-height: 160px;
+    height: auto;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    background-image: linear-gradient(90deg, #FFFFFF40, #82828240);
+    border-radius: 10px;
+
+    gap: 10px;
+
+    padding: 10px;
+}
+
+.contract-main-skin-horizontal-frame {
+    width: 100%;
+    min-width: 580px;
+    min-height: 120px;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 3px;
+}

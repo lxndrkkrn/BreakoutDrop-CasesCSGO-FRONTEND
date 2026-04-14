@@ -1,0 +1,73 @@
+.contract-skin {
+    width: 100%;
+    max-width: 150px;
+    min-height: 150px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.contract-skin-name {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+
+    text-align: center;
+
+
+    font-family: 'Jaro', sans-serif !important;
+    font-size: 16px !important;
+    color: #FFFFFF !important;
+}
+
+.contract-skin-price {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+
+    font-family: 'Jaro', sans-serif !important;
+    font-size: 20px !important;
+
+    background: linear-gradient(180deg, #FF633C 0%, #E29911 100%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    text-align: center;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    border: none;
+    background-color: transparent;
+}
+
+.contract-skin-img {
+    width: 100%;
+    max-width: 130px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.contract-skin:hover {
+    transform: scale(1.05);
+    filter: brightness(1.3);
+}
+
+.contract-skin:active {
+    transform: scale(0.95);
+    filter: brightness(0.9);
+}

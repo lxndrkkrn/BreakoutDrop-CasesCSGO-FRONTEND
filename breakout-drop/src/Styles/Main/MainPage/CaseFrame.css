@@ -19,3 +19,7 @@
     filter: brightness(1.2);
     cursor: pointer;
 }
+
+.case-frame:active {
+    transform: scale(0.8);
+}

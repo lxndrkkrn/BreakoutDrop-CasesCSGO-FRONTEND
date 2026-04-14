@@ -1,0 +1,35 @@
+.skins-list-title {
+    width: 100%;
+    max-width: 2048px;
+    max-height: 65px;
+    margin: 15px;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.youOrContract-skins-list-title {
+    min-width: 640px;
+    max-height: 65px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-image: linear-gradient(270deg, #51515180, #73737380);
+    border-radius: 10px;
+
+    font-family: 'Jaro', sans-serif !important;
+    font-size: 40px !important;
+    color: #FFFFFF !important;
+
+
+}

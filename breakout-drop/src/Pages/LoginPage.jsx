@@ -1,5 +1,6 @@
 
 import React from "react";
+import {Link} from "react-router-dom";
 
 export default function LoginPage() {
     return (
@@ -42,6 +43,12 @@ export default function LoginPage() {
             <button className="register-button">
                 Login
             </button>
+
+            <div className="registerOrLogin-title">
+                <Link to="/register">
+                    <p>Don't have an account? Register</p>
+                </Link>
+            </div>
 
         </div>
     );
