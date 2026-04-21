@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import {registerUser} from "../api.js";
+import {registerUser} from "../api/auth-api.js";
 
 export default function RegisterPage() {
     const [email, setEmail] = useState("");
@@ -11,16 +11,12 @@ export default function RegisterPage() {
 
     const handleSubmit = async () => {
 
-        console.log("ТЕКУЩИЕ СТЕЙТЫ:", { name, email, password, tradeURL });
-
         const data = {
             name: name,
             email: email,
             password: password,
             tradeURL: tradeURL
         };
-
-        console.log("ОБЪЕКТ ДЛЯ ОТПРАВКИ:", JSON.stringify(data));
 
         try {
             const result = await registerUser(data);

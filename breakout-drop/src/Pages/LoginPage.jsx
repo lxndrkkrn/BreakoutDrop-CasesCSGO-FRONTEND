@@ -1,8 +1,27 @@
 
-import React from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom";
+import {loginUser} from "../api/auth-api.js";
 
 export default function LoginPage() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const handleSubmit = async () => {
+
+        const data = {
+            email: email,
+            password: password
+        };
+
+        try {
+            const result = await loginUser(data);
+            console.log("УСПЕХ:", result);
+        } catch (error) {
+            console.error("ОШИБКА В handleSubmit:", error);
+        }
+    };
+
     return (
         <div className="content-area">
 
@@ -20,6 +39,7 @@ export default function LoginPage() {
                             type="text"
                             className="register-input"
                             placeholder="example@gmail.com"
+                            onChange={(e) => {setEmail(e.target.value)}}
                         />
 
                     </div>
@@ -33,6 +53,7 @@ export default function LoginPage() {
                             type="password"
                             className="register-input"
                             placeholder="super secret password"
+                            onChange={(e) => {setPassword(e.target.value)}}
                         />
 
                     </div>
@@ -40,7 +61,7 @@ export default function LoginPage() {
 
             </div>
 
-            <button className="register-button">
+            <button onClick={handleSubmit} className="register-button">
                 Login
             </button>
 

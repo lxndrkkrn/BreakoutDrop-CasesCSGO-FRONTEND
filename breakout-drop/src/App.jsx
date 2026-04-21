@@ -64,8 +64,6 @@ import "./Styles/Main/ContractPage/SignTheContract.css";
 import "../src/index.css";
 import "./Styles/rarities.css";
 
-import React from "react";
-
 import mainButtonImg from "./assets/MainButton.png";
 import caseButtonImg from "./assets/CaseButton.png";
 import upgradeButtonImg from "./assets/UpgradeButton.png";
@@ -74,7 +72,23 @@ import contractButtonImg from "./assets/ContractButton.png";
 import onlinePlayersImg from "./assets/onlinePlayersCount.png";
 import breakout from "./assets/Breakout.jpg";
 
+import {logoutUser} from "./api/auth-api.js";
+import {useEffect, useState} from "react";
+
+
 function App() {
+    const handleSubmit = async () => {
+
+        const data = { };
+
+        try {
+            const result = await logoutUser(data);
+            console.log("УСПЕХ:", result);
+        } catch (error) {
+            console.error("ОШИБКА В handleSubmit:", error);
+        }
+    };
+
     return (
         <BrowserRouter>
             <header className="header-frame">
@@ -214,8 +228,12 @@ function App() {
                                 <p className="blue-text">Responsible gaming</p>
                                 <p className="gray-text">We support fair and responsible gaming, encouraging users to treat games on social platforms as entertainment, not as a source of income.</p>
                             </div>
-
                         </div>
+
+                        <button onClick={handleSubmit} className="logout-button">
+                            Logout
+                        </button>
+
                         <p className="info-url"> </p>
                     </div>
 
@@ -230,71 +248,73 @@ const Home = () => {}
 export default App;
 
 export function HomePage() {
+    const [cases, setCases] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:8080/breakout-drop/case/find/all')
+            .then(res => {
+                if (!res.ok) throw new Error("Ошибка сервера");
+                return res.json();
+            })
+            .then(data => {
+                if (Array.isArray(data)) {
+                    setCases(data);
+                } else {
+                    console.error("Ожидался массив, а пришло:", data);
+                    setCases([]);
+                }
+            })
+            .catch(err => {
+                console.error(err);
+                setCases([]);
+            });
+    }, []);
+
+
+    const groupedCases = cases.reduce((acc, currentCase) => {
+
+        const categories = currentCase.categoryList;
+
+        if (!categories || categories.length === 0) {
+            const noCat = "No Category";
+            if (!acc[noCat]) acc[noCat] = [];
+            acc[noCat].push(currentCase);
+            return acc;
+        }
+
+        categories.forEach(catName => {
+            if (!acc[catName]) {
+                acc[catName] = [];
+            }
+            acc[catName].push(currentCase);
+        });
+
+        return acc;
+    }, {});
+
 
     return (
-        <div className="collection-frame">
+        <div className="all-collections">
+            {Object.entries(groupedCases).map(([categoryName, casesInCategory]) => (
+                <div className="collection-frame" key={categoryName}>
+                    <div className="info-case-line">
+                        {/* Здесь выведется "VALVE" вместо "No Category" */}
+                        <p>{categoryName}</p>
+                    </div>
 
-            <div className="info-case-line">
-                <p>VALVE case's</p>
-            </div>
-
-            <div className="main-horizontal">
-
-                <div className="case-frame">
-                    <Link to="/case/1" style={{ textDecoration: 'none' }}>
-                        <img src={CASE_IMAGES.Kilowatt} alt="case" />
-                        <p className="case-name">Kilowatt</p>
-                        <p className="case-price">29.00</p>
-                    </Link>
+                    <div className="main-horizontal">
+                        {casesInCategory.map(singleCase => (
+                            <div className="case-frame" key={singleCase.id}>
+                                <Link to={`/case/${singleCase.id}`} style={{ textDecoration: 'none' }}>
+                                    <img src={singleCase.pictureCase} alt={singleCase.name} />
+                                    <p className="case-name">{singleCase.name}</p>
+                                    <p className="case-price">$ {singleCase.price}</p>
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-
-                <div className="case-frame">
-                    <Link to="/case/2" style={{ textDecoration: 'none' }}>
-                        <img src={CASE_IMAGES.FractureCase} alt="case" />
-                        <p className="case-name">Fracture</p>
-                        <p className="case-price">75.00</p>
-                    </Link>
-                </div>
-
-                <div className="case-frame">
-                    <Link to="/case/3" style={{ textDecoration: 'none' }}>
-                        <img src={CASE_IMAGES.DreamsNightmares} alt="case" />
-                        <p className="case-name">Dreams & Nightmares</p>
-                        <p className="case-price">189.00</p>
-                    </Link>
-                </div>
-
-            </div>
-
-            <div className="main-horizontal">
-
-                <div className="case-frame">
-                    <Link to="/case/4" style={{ textDecoration: 'none' }}>
-                        <img src={CASE_IMAGES.Phoenix} alt="case" />
-                        <p className="case-name">Phoenix</p>
-                        <p className="case-price">359.00</p>
-                    </Link>
-                </div>
-
-                <div className="case-frame">
-                    <Link to="/case/5" style={{ textDecoration: 'none' }}>
-                        <img src={CASE_IMAGES.Vanguard} alt="case" />
-                        <p className="case-name">Vanguard</p>
-                        <p className="case-price">449.00</p>
-                    </Link>
-                </div>
-
-                <div className="case-frame">
-                    <Link to="/case/6" style={{ textDecoration: 'none' }}>
-                        <img src={CASE_IMAGES.BreakoutCase} alt="case" />
-                        <p className="case-name">Breakout</p>
-                        <p className="case-price">709.00</p>
-                    </Link>
-                </div>
-
-            </div>
-
+            ))}
         </div>
     );
-
 }
